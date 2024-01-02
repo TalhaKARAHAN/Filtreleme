@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgisayar</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="marka">
+                <div class="catagoriname-marka"><b>Marka</b></div>
+                <ul>
+                    <li><input type="checkbox" id="marka-apple"><label for="marka-apple">Apple</label></li>
+                    <li><input type="checkbox" id="marka-monster"><label for="marka-monster">Monster</label></li>
+                    <li><input type="checkbox" id="marka-lenovo"><label for="marka-lenovo">Lenovo</label></li>
+                    <li><input type="checkbox" id="marka-hp"><label for="marka-hp">HP</label></li>
+                </ul>
+            </div>
+            <div class="ram">
+                <div class="catagoriname-ram"><b>RAM</b></div>
+                <ul>
+                    <li><input type="checkbox" id="ram-4gb"> <label for="ram-4gb">4GB</label></li>
+
+                    <li><input type="checkbox" id="ram-8gb"> <label for="ram-8gb">8GB</label></li>
+
+                    <li><input type="checkbox" id="ram-16gb"> <label for="ram-16gb">16GB</label></li>
+
+                    <li><input type="checkbox" id="ram-32gb"> <label for="ram-32gb">32GB</label></li>
+                  </ul>
+            </div>
+            <div class="ekranboyutu">
+                <div class="catagoriname-eb"><b>Ekran Boyutu</b></div>
+                <ul>
+                    <li><input type="checkbox" id="eb-13.3"><label for="eb-13.3">13.3 inç</label></li>
+
+                    <li><input type="checkbox" id="eb-14"><label for="eb-14">14 inç</label></li>
+
+                    <li><input type="checkbox" id="eb-15.6"><label for="eb-15.6">15.6 inç</label></li>
+                 
+                    <li><input type="checkbox" id="eb-17.3"><label for="eb-17.3">17.3 inç</label></li>
+                </ul>
+            </div>
+            <div class="işlemcituru">
+                <div class="catagoriname-it"><b>İşlemci Türü</b></div>
+                <ul>
+                    <li><input type="checkbox" id="it-i3"><label for="it-i3">İntel Core i3</label></li>
+                    
+                    <li><input type="checkbox" id="it-i5"><label for="it-i5">İntel Core i5</label></li>
+                    
+                    <li><input type="checkbox" id="it-i7"><label for="it-i7">İntel Core i7</label></li>
+                    
+                    <li><input type="checkbox" id="it-r3"><label for="it-r3">AMD Rayzen 3</label></li>
+
+                    <li><input type="checkbox" id="it-r5"><label for="it-r5">AMD Rayzen 5</label></li>
+
+                    <li><input type="checkbox" id="it-r7"><label for="it-r7">AMD Rayzen 7</label></li>
+
+                    <li><input type="checkbox" id="it-m1"><label for="it-m1">Apple M1</label></li>
+
+                    <li><input type="checkbox" id="it-m2"><label for="it-m2">Apple M2</label></li>
+
+                    <li><input type="checkbox" id="it-m3"><label for="it-m3">Apple M3</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="product-list">
+                <div class="product" style="width: 18rem;">
+                    <img src="img/mac.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Macbook Air</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="apple">Apple</li>
+                      <li class="list-group-item ram" value="8gb">8 GB RAM</li>
+                      <li class="list-group-item eb" value="13.3">13.3 Inc</li>
+                      <li class="list-group-item it" value="m1">M1 İşlemci</li>
+                    </ul>
+                </div>    
+
+                <div class="product" style="width: 18rem;">
+                    <img src="img/hp.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">HP 255</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="hp">HP</li>
+                      <li class="list-group-item ram" value="8gb">8 GB RAM</li>
+                      <li class="list-group-item eb" value="15.6">15.6 Inc</li>
+                      <li class="list-group-item it" value="r5">AMD Ryzen 5 İşlemci</li>
+                    </ul>
+                </div> 
+
+                <div class="product" style="width: 18rem;">
+                    <img src="img/lenovo.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo V15</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="lenovo">Lenovo</li>
+                      <li class="list-group-item ram" value="16gb">16 GB RAM</li>
+                      <li class="list-group-item eb" value="15.6">15.6 Inc</li>
+                      <li class="list-group-item it" value="r5">AMD Ryzen 5 İşlemci</li>
+                    </ul>
+                </div>       
+            
+                <div class="product" style="width: 18rem;">
+                    <img src="img/mac.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Macbook Air</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="apple">Apple</li>
+                      <li class="list-group-item ram" value="16gb">16 GB RAM</li>
+                      <li class="list-group-item eb" value="15.6">15.6 Inc</li>
+                      <li class="list-group-item it" value="m2">M2 işlemci</li>
+                    </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                    <img src="img/mac.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Macbook Air</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="apple">Apple</li>
+                      <li class="list-group-item ram" value="32gb">32 GB RAM</li>
+                      <li class="list-group-item eb" value="13.3">13.3 Inc</li>
+                      <li class="list-group-item it" value="m3">M3 işlemci</li>
+                    </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                    <img src="img/hp.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">HP</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="hp">HP</li>
+                      <li class="list-group-item ram" value="8gb">8 GB RAM</li>
+                      <li class="list-group-item eb" value="15.6">15.6 Inc</li>
+                      <li class="list-group-item it" value="i7">i7 işlemci</li>
+                    </ul>
+                </div>
+                
+                <div class="product" style="width: 18rem;">
+                    <img src="img/monster.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Monster Abra A7</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="monster">Monster</li>
+                      <li class="list-group-item ram" value="32gb">32 GB RAM</li>
+                      <li class="list-group-item eb" value="17.3">17.3 İnc</li>
+                      <li class="list-group-item it" value="i7">i7 İşlemci</li>
+                    </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                    <img src="img/monster.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Monster Abra A5</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="monster">Monster</li>
+                      <li class="list-group-item ram" value="16gb">16 GB RAM</li>
+                      <li class="list-group-item eb" value="15.6">15.6 İnc</li>
+                      <li class="list-group-item it" value="i5">i5 İşlemci</li>
+                    </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                  <img src="img/lenovo.avif" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lenovo V15</h5>
+                  </div>
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item marka" value="lenovo">Lenovo</li>
+                    <li class="list-group-item ram" value="4gb">4 GB RAM</li>
+                    <li class="list-group-item eb" value="15.6">15.6 İnc</li>
+                    <li class="list-group-item it" value="i3">i3 İşlemci</li>
+                  </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                <img src="img/hp.avif" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">HP 155</h5>
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item marka" value="hp">HP</li>
+                  <li class="list-group-item ram" value="16gb">16 GB RAM</li>
+                  <li class="list-group-item eb" value="14">14 İnc</li>
+                  <li class="list-group-item it" value="r3">AMD Rayzen 3 İşlemci</li>
+                </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+              <img src="img/lenovo.avif" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Lenovo V17</h5>
+              </div>
+              
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item marka" value="lenovo">Lenovo</li>
+                <li class="list-group-item ram" value="32gb">32 GB RAM</li>
+                <li class="list-group-item eb" value="17.3">17.3 İnc</li>
+                <li class="list-group-item it" value="r7">AMD Rayzen 7 İşlemci</li>
+              </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                <img src="img/mac.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Macbook Pro</h5>
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item marka" value="apple">Apple</li>
+                  <li class="list-group-item ram" value="32gb">32 GB RAM</li>
+                  <li class="list-group-item eb" value="14">14 İnc</li>
+                  <li class="list-group-item it" value="m3">M3 İşlemci</li>
+                </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                  <img src="img/monster.avif" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Monster Abra A5</h5>
+                  </div>
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item marka" value="monster">Monster</li>
+                    <li class="list-group-item ram" value="8gb">8 GB RAM</li>
+                    <li class="list-group-item eb" value="15.6">15.6 İnc</li>
+                    <li class="list-group-item it" value="i5">i5 İşlemci</li>
+                  </ul>
+                </div>
+
+                <div class="product" style="width: 18rem;">
+                  <img src="img/hp.avif" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">HP 112</h5>
+                  </div>
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item marka" value="hp">HP</li>
+                    <li class="list-group-item ram" value="4gb">4 GB RAM</li>
+                    <li class="list-group-item eb" value="14">14 İnc</li>
+                    <li class="list-group-item it" value="i3">i3 İşlemci</li>
+                  </ul>
+                  </div>
+
+                  <div class="product" style="width: 18rem;">
+                    <img src="img/mac.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Macbook Air</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="apple">Apple</li>
+                      <li class="list-group-item ram" value="4gb">4 GB RAM</li>
+                      <li class="list-group-item eb" value="13.3">13.3 İnc</li>
+                      <li class="list-group-item it" value="m1">M1 İşlemci</li>
+                    </ul>
+                  </div>  
+                  
+                  <div class="product" style="width: 18rem;">
+                    <img src="img/lenovo.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo V15</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="lenovo">Lenovo</li>
+                      <li class="list-group-item ram" value="4gb">4 GB RAM</li>
+                      <li class="list-group-item eb" value="14">14 İnc</li>
+                      <li class="list-group-item it" value="i5">i5 İşlemci</li>
+                    </ul>
+                  </div>
+
+                  <div class="product" style="width: 18rem;">
+                    <img src="img/monster.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Monster Tulpar </h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="monster">Monster</li>
+                      <li class="list-group-item ram" value="32gb">32 GB RAM</li>
+                      <li class="list-group-item eb" value="17.3">17.3 İnc</li>
+                      <li class="list-group-item it" value="r7">AMD Rayzen 7 İşlemci</li>
+                    </ul>
+                  </div>
+
+                  <div class="product" style="width: 18rem;">
+                    <img src="img/mac.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Macbook Pro</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="apple">Apple</li>
+                      <li class="list-group-item ram" value="16gb">16 GB RAM</li>
+                      <li class="list-group-item eb" value="13.3">13.3 İnc</li>
+                      <li class="list-group-item it" value="m2">M2 İşlemci</li>
+                    </ul>
+                  </div>
+
+                  <div class="product" style="width: 18rem;">
+                    <img src="img/lenovo.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo V17</h5>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item marka" value="lenovo">Lenovo</li>
+                      <li class="list-group-item ram" value="8gb">8 GB RAM</li>
+                      <li class="list-group-item eb" value="17.3">17.3 İnc</li>
+                      <li class="list-group-item it" value="r3">AMD Rayzen 3 İşlemci</li>
+                    </ul>
+                  </div>
+                  
+            </div>  
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
